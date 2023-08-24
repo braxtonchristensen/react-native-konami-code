@@ -1,6 +1,6 @@
 {
   "name": "react-native-konami-code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "cheat code listener",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
