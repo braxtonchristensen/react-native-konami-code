@@ -1,6 +1,6 @@
 # react-native-konami-code
 
-cheat code listener
+cheat code listener by default we will use the classic konami code
 
 ## Installation
 
@@ -11,11 +11,26 @@ npm install react-native-konami-code
 ## Usage
 
 ```js
-import { multiply } from 'react-native-konami-code';
+import { KonamiCode } from 'react-native-konami-code';
+// or as default
+import SuperImportantProvider from 'react-native-konami-code'; // 😉
 
 // ...
 
-const result = await multiply(3, 7);
+<KonamiCode
+  onPatternComplete={() => {
+    setResult(true);
+  }}
+  onPatternFail={() => setResult(false)}
+>
+  {/* Your component content here */}
+  <SafeAreaView>
+      <Button
+        title="Button"
+        onPress={() => console.log('Button pressed')}
+      />
+  </SafeAreaView>
+</KonamiCode>
 ```
 
 ## Contributing
